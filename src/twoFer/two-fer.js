@@ -4,7 +4,12 @@
 // ? follow this template for jsdoc comments
 /**
  * what does the function do?
- *
- * @param {paramType} paramName - description
+ * When the user inputs a name, it returns One for ${nameInput}, and one for me.
+ * @param {paramType} nameInput - description
  * @returns {returnType} description
  */
+
+export function twoFer(nameInput = "you") {
+    return 'One for ${nameInput}, and one for me.';
+}
+console.log(twoFer("Sam"))
